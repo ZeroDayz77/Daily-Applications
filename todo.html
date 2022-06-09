@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My To Do</title>
+    <link rel="stylesheet" type="text/css" href="todostyle.css" />
     <link
       rel="icon"
       type="image/x-icon"
       href="https://minecraft-tutos.com/wp-content/uploads/2021/10/frog-minecraft.png"
     />
   </head>
-  <body>
+  <body class="background">
+    <div class="container">
+      <h1 class="title">List of Tasks:</h1>
+    </div>
     <input
       id="todo-Title"
       type="text"
@@ -19,11 +23,10 @@
       placeholder="Task"
       required
     />
+    <input id="date-picker" type="date" />
     <button id="hi" onclick="addTodo()">Add Task</button>
-    <div>
-      <h1>List of Tasks:</h1>
-    </div>
+
     <div id="todo-List"></div>
-    <script src="script.js"></script>
+    <script src="todoscript.js"></script>
   </body>
 </html>

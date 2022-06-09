@@ -83,29 +83,3 @@ document.querySelector(".next").addEventListener("click", () => {
 renderCalendar();
 
 //all code for the calendar page ends here:
-
-//all code for the tasks page starts here:
-let todos = ["Get groceries", "Clean yard", "Workout"];
-
-renderTodo();
-
-function addTodo() {
-  let textBox = document.getElementById("todo-Title");
-  let title = textBox.value;
-  todos.push(title);
-
-  renderTodo();
-}
-
-function renderTodo() {
-  /* hey first comment.. anyway, this will only add an item but reuse the ones before it instead of resetting so we will now reset it*/
-  document.getElementById("todo-List").innerHTML = "";
-
-  todos.forEach(function (todoName) {
-    let element = document.createElement("div");
-    element.innerText = todoName;
-    let todoList = document.getElementById("todo-List");
-    todoList.appendChild(element);
-  });
-}
-//all code for the tasks page ends here:
