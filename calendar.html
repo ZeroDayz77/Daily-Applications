@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is not only used as a personal portfolio but as a aid to everyday utilities all in one place"
+    />
     <title>My Calendar</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="calendarstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,6 +28,16 @@
     />
   </head>
   <body class="background">
+    <nav class="topnavbar">
+      <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <div class="top-nav-right-align">
+          <a href="calendar.html">Calendar</a>
+          <a href="todo.html">To Do List</a>
+          <a href="#about">Others</a>
+        </div>
+      </div>
+    </nav>
     <h1 class="title">My Calendar</h1>
     <div class="container">
       <div class="calendar">
@@ -47,7 +61,6 @@
         <div class="days"></div>
       </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="calendarscript.js"></script>
   </body>
 </html>
