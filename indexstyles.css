@@ -52,5 +52,28 @@
 }
 
 html {
-    font-size: 62.5%;
-  }
+  font-size: 62.5%;
+}
+
+.website-description {
+  margin: 0 1rem 0 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.top-page-segment {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://wallpaperaccess.com/full/2525117.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.website-description,
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
