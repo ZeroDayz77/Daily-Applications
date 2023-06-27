@@ -1,0 +1,165 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.top-nav-right-align {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* end of navbar css */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.remove-button {
+  margin-left: 1rem;
+}
+
+.container {
+  margin: auto;
+  padding-top: 1rem;
+  background-color: #94e4f8a8;
+  width: 100%;
+  height: 100vh;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Footer css start */
+
+#footer{
+  background-color: #333;
+}
+
+.footer-containter{
+  width: 100%;
+  padding: 40px 10px 10px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 80%);
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.social-icons a i{
+  font-size: 2em;
+  color: #333;
+  opacity: 0.9;
+}
+
+.social-icons a:hover{
+  background-color: #333;
+  transition: 0.2s;
+}
+
+.social-icons a i:hover{
+  color: white;
+  transition: 0.2s;
+}
+
+.footer-nav{
+  margin: 30px 0;
+}
+
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li{
+  list-style-type: none;
+}
+
+.footer-nav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.footer-nav ul li a:hover{
+  opacity: 1;
+}
+
+.footer-base{
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-base p{
+  color: white;
+}
+
+.footer-base p a{
+  text-decoration: none;
+}
+
+.footer-base p a:visited, a:link{
+  color: white;
+}
+
+@media (max-width: 700px){
+  .footer-nav{
+    flex-direction: column;
+  }
+
+  .footer-nav ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/* Footer end*/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My To Do</title>
+    <link rel="stylesheet" type="text/css" href="/css/todostyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://minecraft-tutos.com/wp-content/uploads/2021/10/frog-minecraft.png"
+    />
+    <script defer src="/src/todoscript.js"></script>
+    <script defer src="/src/index.js"></script>
+  </head>
+  <body class="background">
+    <nav class="topnavbar">
+      <div class="topnav">
+        <a href="/">Home</a>
+        <div class="top-nav-right-align">
+          <a href="/calendar">Calendar</a>
+          <a class="active" href="/todo">To Do List</a>
+          <a href="/about">Others</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="title">List of Tasks:</h1>
+    <main>
+      <div class="container">
+        <div class="todo-input">
+        <input
+          id="todo-Title"
+          type="text"
+          name="newTodo"
+          placeholder="Enter task..."
+          required
+        />
+        <input id="date-picker" type="date" />
+        <button id="hi" onclick="addTodo()">Add Task</button>
+        </div>
+        <div id="todo-List"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer-containter">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/darnell-garcia/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/darnell__garcia"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/ZeroDayz77"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/calendar">Calendar</a></li>
+            <li><a href="/todo">To Do List</a></li>
+            <li><a href="/about">Others</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>Created 2022 By <a target="_blank" href="https://darnellgarcia.vercel.app/">Darnell Garcia</a> </p>
+      </div>
+    </footer>
+  </body>
+</html>
