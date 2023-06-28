@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.static(path.join(__dirname, '/views')));
+app.use(express.static(path.join(__dirname, '/')));
 app.use('/', router);
 
 router.get("/",function(req,res){

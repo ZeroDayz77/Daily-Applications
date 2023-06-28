@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Tools</title>
+    <title>Daily Tools - Home</title>
     <link rel="stylesheet" type="text/css" href="/css/indexstyles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/tailwind.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,38 +25,51 @@
     <script defer src="/src/index.js"></script>
   </head>
   <body>
-    <div class="top-page-segment">
-      <nav class="topnavbar">
-        <div class="topnav">
-          <a class="active" href="/">Home</a>
-          <div class="top-nav-right-align">
-            <a href="/calendar">Calendar</a>
-            <a href="/todo">To Do List</a>
-            <a href="/about">Others</a>
+    <nav class="topnavbar">
+      <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <div class="top-nav-right-align">
+          <a href="/calendar">Calendar</a>
+          <a href="/todo">To Do List</a>
+          <a href="/about">Others</a>
+        </div>
+      </div>
+    </nav>
+    <main class="top-page-segment">
+      <h1 class="page-title" >Home</h1>
+      <div class="website-description">
+        <p>
+          This website was cerated with the purpose of having all daily
+          utilities you could need, all on one site. This also acts as a proof
+          of concept for my skills as a web developer while adding functionality
+          and purpose to what I build. - Darnell
+        </p>
+      </div>
+      <article>
+        <!-- Card views -->    
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="/calendar">
+              <img class="rounded-t-lg" src="/img/calendar-card-image.png" alt="help" />
+          </a>
+          <div class="p-5">
+              <a href="/calendar">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              <a href="/calendar" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Read more
+                  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a>
           </div>
         </div>
-      </nav>
-      <nav>
-        <div class="page-title">
-          <h1>Home</h1>
-        </div>
-        <div class="website-description">
-          <p>
-            This website was cerated with the purpose of having all daily
-            utilities you could need, all on one site. This also acts as a proof
-            of concept for my skills as a web developer while adding functionality
-            and purpose to what I build. - Darnell
-          </p>
-        </div>
-      </nav>
-    </div>
-    <main></main>
+      </article>
+    </main>
     <footer id="footer">
       <div class="footer-containter">
         <div class="social-icons">
-          <a href="https://www.linkedin.com/in/darnell-garcia/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://twitter.com/darnell__garcia"><i class="fa-brands fa-github"></i></a>
-          <a href="https://github.com/ZeroDayz77"><i class="fa-brands fa-twitter"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/darnell-garcia/"><i class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://twitter.com/darnell__garcia"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://github.com/ZeroDayz77"><i class="fa-brands fa-twitter"></i></a>
         </div>
         <div class="footer-nav">
           <ul>
@@ -67,7 +81,7 @@
         </div>
       </div>
       <div class="footer-base">
-        <p>Created 2022 By <a target="_blank" href="https://darnellgarcia.vercel.app/">Darnell Garcia</a> </p>
+        <p>Created By <a target="_blank" href="https://darnellgarcia.vercel.app/">Darnell Garcia</a> </p>
       </div>
     </footer>
   </body>
