@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -39,9 +43,9 @@
   justify-content: center;
 }
 
-.page-title > h1 {
+.page-title{
   margin: auto;
-  padding: 10px;
+  padding: 10px 0px 0px 0px;
 }
 
 * {
@@ -64,7 +68,7 @@ html {
 .top-page-segment {
   height: 100vh;
   width: 100%;
-  background-image: url("https://wallpaperaccess.com/full/2525117.jpg");
+  background-color: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
