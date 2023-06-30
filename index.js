@@ -22,6 +22,10 @@ router.get("/calendar",function(req,res){
 router.get("/todo",function(req,res){
     res.sendFile(path.join(__dirname+'/views/todo.html'));
   });
+
+router.get("/signup",function(req,res){
+    res.sendFile(path.join(__dirname+'/views/sign_up.html'));
+  });
    
 
 app.listen(port, () => {
