@@ -151,6 +151,7 @@ html {
 
 .footer-nav ul li a:hover{
   opacity: 1;
+  cursor: pointer;
 }
 
 .footer-base{
