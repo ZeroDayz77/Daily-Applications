@@ -49,9 +49,11 @@
   text-align: center;
   padding: 10px;
   margin: auto;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-.container {
+.main-container {
   margin: auto;
   padding: 0px;
   background-color: #94e4f8a8;
@@ -152,6 +154,15 @@ html {
   transition: background-color 0.2s;
 }
 
+.today {
+  background-color: #fffebc;
+}
+
+.today:hover {
+  border: 0.2rem solid #ddd;
+  cursor: pointer;
+}
+
 .days div:hover:not(.today) {
   background-color: #e6e6e6;
   border: 0.2rem solid #777;
@@ -161,10 +172,6 @@ html {
 .prev-date,
 .next-date {
   opacity: 0.5;
-}
-
-.today {
-  background-color: #fffebc;
 }
 
 /* Footer css start */
