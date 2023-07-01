@@ -60,12 +60,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .title {
   text-align: center;
   padding: 10px;
   margin: auto;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 html {

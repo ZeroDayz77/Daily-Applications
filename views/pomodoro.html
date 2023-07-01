@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<!--eventually will change this to be the home page-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Tools - My Calendar</title>
-    <link rel="stylesheet" type="text/css" href="/css/calendarstyle.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tools - My Pomodoro Timer</title>
+    <link rel="stylesheet" type="text/css" href="/css/pomodorostyle.css" />
     <link rel="stylesheet" type="text/css" href="/css/tailwind.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -23,12 +22,12 @@
       type="image/x-icon"
       href="https://minecraft-tutos.com/wp-content/uploads/2021/10/frog-minecraft.png"
     />
-    <script defer src="/src/calendarscript.js"></script>
+    <script defer src="/src/pomodoroscript.js"></script>
     <script defer src="/src/index.js"></script>
     <script defer src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
-  </head>
-  <body class="background">
+</head>
+<body>
 <!-- NAVBAR -->
   <nav class="topnavbar">
     <div class="topnav">
@@ -136,28 +135,41 @@
     </ul>
   </div>
   </div>
-    <h1 class="title">My Calendar</h1>
+<!-- START OF MAIN -->
+    <h1 class="page-title" >My Pomodoro Timer</h1>
+<!-- CLOCK -->
+    <header id="clock">
+        <div id="current-date"></div>
+        <div id="current-time"></div>
+        <div class="form-24-hours">
+            <input id="24-hours" class="form-checkbox focus:ring-0 focus:ring-offset-0" type="checkbox">
+            <label class="form-check-label" for="flexCheckDefault">
+            Enable 24 Hour Time
+            </label> 
+        </div>
+    </header>
+<!-- START OF TIMER -->
     <main class="main-container">
-      <div class="calendar">
-        <div class="month">
-          <i class="fas fa-angle-left prev"></i>
-          <div class="date">
-            <h1></h1>
-            <p></p>
-          </div>
-          <i class="fas fa-angle-right next"></i>
+        <div class="container">
+            <div id="js-mode-buttons" class="painel">
+                <button data-mode="pomodoro" class="button mode-button" id="work">work</button>
+                <button data-mode="shortBreak" class="button mode-button" id="break">break</button>
+            </div>
+            <div id="js-clock" class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">25</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="main-button" data-action="start" id="start"><i class="fa-solid fa-play"></i></button>
+                <button class="main-button" data-action="stop" id="stop" onclick="stopTimer()"><i class="fa-solid fa-pause"></i></button>
+                <a id="reset" href="/views/pomodoro.html"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </div>
         </div>
-        <div class="weekdays">
-          <div>Sun</div>
-          <div>Mon</div>
-          <div>Tue</div>
-          <div>Wed</div>
-          <div>Thu</div>
-          <div>Fri</div>
-          <div>Sat</div>
-        </div>
-        <div class="days"></div>
-      </div>
     </main>
 <!-- START OF FOOTER -->
     <footer id="footer">
@@ -178,5 +190,9 @@
         <p>Created By <a target="_blank" href="https://darnellgarcia.vercel.app/">Darnell Garcia</a> </p>
       </div>
     </footer>
-  </body>
+    <div class="hidden">
+        <audio src="/sounds/backtowork.mp3" data-sound="pomodoro"></audio>
+        <audio src="/sounds/break.mp3" data-sound="shortBreak"></audio>
+    </div>
+</body>
 </html>

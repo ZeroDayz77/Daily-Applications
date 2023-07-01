@@ -26,6 +26,14 @@ router.get("/todo",function(req,res){
 router.get("/signup",function(req,res){
     res.sendFile(path.join(__dirname+'/views/sign_up.html'));
   });
+
+router.get("/pomodoro",function(req,res){
+    res.sendFile(path.join(__dirname+'/views/pomodoro.html'));
+  });
+
+router.get("/soon",function(req,res){
+    res.sendFile(path.join(__dirname+'/views/coming_soon.html'));
+  });
    
 
 app.listen(port, () => {
